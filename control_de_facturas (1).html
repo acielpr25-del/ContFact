@@ -39,6 +39,13 @@ input:focus{outline:2px solid #a5c5b4;border-color:var(--green2)}
 @media print{header,nav,.no-print,form,.actions,.filters{display:none!important}body{background:white}.page{display:block!important}.panel,.stat{break-inside:avoid;border:1px solid #bbb}main{max-width:none;padding:0}.grid{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
+ <script>
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', () => {
+navigator.serviceWorker.register('./service-worker.js');
+});
+}
+ </script>
 <body>
 <header><div class="wrap"><h1>Control de Facturas</h1><p>Registro de compras · Historial de precios · Variaciones</p></div></header>
 <nav class="no-print">
