@@ -1,1 +1,9 @@
-
+{
+  "name": "Control de Facturas",
+  "short_name": "Facturas",
+  "start_url": "./control_de_facturas.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1565c0",
+  "icons": []
+}
